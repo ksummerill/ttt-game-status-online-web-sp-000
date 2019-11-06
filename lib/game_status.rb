@@ -44,13 +44,14 @@ end
 
 def draw?(board)
   # binding.pry
-  if !won?(board) && full?(board)
-    return true
-  elsif !won?(board) && !full?(board)
-    return false
-  else won?(board)
-    return false
-  end
+  full?(board) && !won?(board)
+  # if !won?(board) && full?(board)
+  #   return true
+  # elsif !won?(board) && !full?(board)
+  #   return false
+  # else won?(board)
+  #   return false
+  # end
 end
 
 # returns true if the board has been won, is a draw, or is full.
