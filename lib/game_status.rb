@@ -1,4 +1,4 @@
-# require "pry"
+require "pry"
 
 # Helper Method
 def position_taken?(board, index)
@@ -42,7 +42,7 @@ end
 
 
 def draw?(board)
-  binding.pry
+  # binding.pry
   if !won?(board) && full?(board)
     return true
   elsif !won?(board) && !full?(board)
