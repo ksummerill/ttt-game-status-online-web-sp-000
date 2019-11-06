@@ -29,16 +29,9 @@ def won?(board)
   winner
 end
 
-# # check to see if the board is full
-# def full?(board)
-#   !board.all? do { |token| board[]}
-#
-#   end
-#   { "X" || "O" }
-# end
-
+# check to see if the board is full
 def full?(board)
-  !board.all? { |full| full == "X" || "O"}
+  !board.all? { |full| full == "X" || full == "O"}
 end
 
 # returns true if the board has not been won but is full,
