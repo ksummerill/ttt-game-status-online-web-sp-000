@@ -32,8 +32,8 @@ end
 # check to see if the board is full
 def full?(board)
   !board.all? do { |token| board[]}
-    
-  end 
+
+  end
   { "X" || "O" }
 end
 
