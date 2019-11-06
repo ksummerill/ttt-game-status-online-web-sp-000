@@ -38,7 +38,7 @@ def full?(board)
 end
 
 def full?(board)
-  !board.any? { |full| full == "X" || "O"}
+  !board.all? { |full| full == "X" || "O"}
 end
 
 # returns true if the board has not been won but is full,
