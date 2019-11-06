@@ -29,7 +29,7 @@ def won?(board)
   winner
 end
 
-# don't understand how this one line can work for both #full? conditions
+# check to see if the board is full
 def full?(board)
   # all_x = "X"
   # all_o = "O"
