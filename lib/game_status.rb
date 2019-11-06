@@ -18,7 +18,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   winner = []
-  empty_board = board.all? { |empty| empty == " "}
+  empty_board = board.all? { |empty| empty == " " || empty == nil}
   WIN_COMBINATIONS.each do |win_combo|
     if empty_board || full?(board)
       return false
