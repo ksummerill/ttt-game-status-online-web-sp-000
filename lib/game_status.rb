@@ -31,8 +31,14 @@ end
 
 # don't understand how this one line can work for both #full? conditions
 def full?(board)
-  !board.any? { |full| full == " "}
+  all_x = "X"
+  all_o = "O"
+  board.all? { all_x || all_o }
+  # !board.all? { |full| full == " "}
 end
+# def full?(board)
+#   !board.any? { |full| full == " "}
+# end
 
 # returns true if the board has not been won but is full,
 # false if the board is not won and the board is not full,
