@@ -31,7 +31,7 @@ end
 
 # check to see if the board is full
 def full?(board)
-  !board.all? { |full| full == "X" || full == "O"}
+  board.all? { |full| full == "X" || full == "O"}
 end
 
 # returns true if the board has not been won but is full,
