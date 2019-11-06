@@ -31,12 +31,15 @@ end
 
 # check to see if the board is full
 def full?(board)
-  # all_x = "X"
-  # all_o = "O"
-  # board.all? { all_x || all_o }
-  !board.all? { "X" || "O" }
+  !board.all? do { |token| board[]}
+    
+  end 
+  { "X" || "O" }
 end
 
+def full?(board)
+  !board.any? { |full| full == "X" || "O"}
+end
 
 # returns true if the board has not been won but is full,
 # false if the board is not won and the board is not full,
