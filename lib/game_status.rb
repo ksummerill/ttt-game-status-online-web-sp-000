@@ -23,13 +23,12 @@ def won?(board)
   empty_board = board.all? { |empty| empty == " " || empty == nil}
   WIN_COMBINATIONS.each do |win_combo|
     # binding.pry
-    if empty_board
-      return false
-    elsif win_combo.all? { |value| board[value] == "X"} || win_combo.all? { |value| board[value] == "O"}
+    if win_combo.all? { |value| board[value] == "X"} || win_combo.all? { |value| board[value] == "O"}
       winner = win_combo
+      return winner
     end
   end
-  winner
+  return false
 end
 
 # check to see if the board is full
