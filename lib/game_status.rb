@@ -34,7 +34,7 @@ def full?(board)
   # all_x = "X"
   # all_o = "O"
   # board.all? { all_x || all_o }
-  !board.all? { "X" || "O" }
+  board.all? { "X" || "O" }
 end
 
 
